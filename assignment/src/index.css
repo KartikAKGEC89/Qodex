@@ -1,0 +1,130 @@
+body {
+  background: linear-gradient(to bottom, #0A1F44, #083636);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.weather-app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.place-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 50px;
+  right: 10px; 
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.current-place {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.current-time {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.title {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.title img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.weather-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.weather-card {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  width: 100px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .place-time,
+  .title {
+    text-align: center;
+  }
+
+  .title img {
+    margin-top: 10px;
+  }
+}
+
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 98%;
+}
+
+.search-input {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 70%;
+  font-size: 16px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
